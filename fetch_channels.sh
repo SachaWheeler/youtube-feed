@@ -30,6 +30,7 @@ CHANNELS=(
     "UCEIwxahdLz7bap-VDs9h35A",  # Steve Mould               "https://www.youtube.com/channel/UCEIwxahdLz7bap-VDs9h35A"),
     "UCsX5upzW0Tk2riDY1WB887w",  # Hannah Fry                "https://www.youtube.com/channel/UCsX5upzW0Tk2riDY1WB887w"),
     "UCw_lQ_KhJBX4hAQ6rqbg0Bw",  # Kentuky Ballistics        "https://www.youtube.com/@KentuckyBallistics
+    "UCm9K6rby98W8JigLoZOh6FQ",  # Lock Picking Lawyyer      "https://www.youtube.com/channel/UCm9K6rby98W8JigLoZOh6FQ"
     # "https://www.youtube.com/user/ChannelName3"
 )
 
