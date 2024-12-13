@@ -31,10 +31,12 @@ CHANNELS=(
     "UCsX5upzW0Tk2riDY1WB887w",  # Hannah Fry                "https://www.youtube.com/channel/UCsX5upzW0Tk2riDY1WB887w"),
     "UCw_lQ_KhJBX4hAQ6rqbg0Bw",  # Kentuky Ballistics        "https://www.youtube.com/@KentuckyBallistics
     "UCm9K6rby98W8JigLoZOh6FQ",  # Lock Picking Lawyyer      "https://www.youtube.com/channel/UCm9K6rby98W8JigLoZOh6FQ"
+    "UCu0CCEzTTntkXUUdJC20i1w",  # JamiesBrickJams           "https://www.youtube.com/channel/UCu0CCEzTTntkXUUdJC20i1w"
+    "UCDWboBDVnIsGdYSK3KUO0hQ",  # Bricks for Granite        "https://www.youtube.com/channel/UCDWboBDVnIsGdYSK3KUO0hQ"
     # "https://www.youtube.com/user/ChannelName3"
 )
 
-BASE_DOWNLOAD_DIR="/media/sacha/moshpit/youtube" #"/moshpit/youtube"
+BASE_DOWNLOAD_DIR="/moshpit/youtube" #"/moshpit/youtube"
 # DESTINATION_DIR="/moshpit/youtube"
 
 TIMESTAMP_FILE="$BASE_DOWNLOAD_DIR/file.txt"
@@ -65,31 +67,17 @@ check_and_download() {
 
         # Check if the video is already downloaded
         filename=$(yt-dlp --no-warnings --get-filename --no-download-archive -o "$video_dir/%(title)s.%(ext)s" "$video_url")
-        if [[ ! -f "$filename" && "$filename" != *"webm"* && "$filename" != *"mkv"* ]]; then
+        # if [[ ! -f "$filename" && "$filename" != *"webm"* && "$filename" != *"mkv"* ]]; then
+        if [[ ! -f "$filename" ]]; then
             echo "Downloading new video: $video_url"
-            yt-dlp --no-warnings -f "bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]/best[ext=mp4][height<=480]" \
+
+            yt-dlp  -f "bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]/best[ext=mp4][height<=480]" \
                     --postprocessor-args "-movflags +faststart" \
                     -o "$filename" "$video_url"
 
             # Temporary output file
-            temp_file="${filename}.tmp"
+            # temp_file="${filename}.tmp"
 
-            # Process the video with ffmpeg
-            # ffmpeg -i "$filename" -vf "scale=1280:720" -c:a copy "$temp_file"
-            # ffmpeg -i "$filename" -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 192k -movflags +faststart "$temp_file"
-
-            # Check if ffmpeg was successful
-            # if [ $? -eq 0 ]; then
-                # # Replace the original file with the processed one
-                # mv "$temp_file" "$filename"
-                # echo "Video processed and replaced successfully."
-            # else
-                # # Remove the temporary file if processing failed
-                # rm "$temp_file"
-                # echo "Video processing failed."
-            # fi
-
-            # ffmpeg -i input_video.mp4 -c:v libx264 -preset fast -crf 23 -c:a aac -b:a 192k -movflags +faststart output_video.mp4
             echo "$filename"
             touch "$filename"
             touch "$TIMESTAMP_FILE"
@@ -102,10 +90,11 @@ for channel in "${CHANNELS[@]}"; do
     check_and_download "$channel"
 done
 
+# Remove temp files
+find "$BASE_DOWNLOAD_DIR" -type f -name "*.webm" -size 0 -exec rm {} +
+
 # Remove videos older than 7 days
 find "$BASE_DOWNLOAD_DIR" -type f -mtime +7 -name "*.mp4" -delete
-
 find "$BASE_DOWNLOAD_DIR" -type d -empty -delete
 
-# rsync -rav --no-o --no-g --no-perms --prune-empty-dirs "$BASE_DOWNLOAD_DIR/" "$DESTINATION_DIR" --delete
 echo "Done"
