@@ -115,15 +115,12 @@ check_and_download() {
         # Check if the video is already downloaded
         filename=$(yt-dlp --no-warnings --get-filename --no-download-archive -o "$video_dir/%(title)s.%(ext)s" "$video_url")
         # if [[ ! -f "$filename" && "$filename" != *"webm"* && "$filename" != *"mkv"* ]]; then
-        if [[ ! -f "$filename" ]]; then
+        if [[ ! -f "$filename" && "$filename" != *"#shorts"* ]]; then
             echo "Downloading new video: $video_url"
 
             yt-dlp  -f "bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]/best[ext=mp4][height<=480]" \
                     --postprocessor-args "-movflags +faststart" \
                     -o "$filename" "$video_url"
-
-            # Temporary output file
-            # temp_file="${filename}.tmp"
 
             echo "$filename"
             touch "$filename"
