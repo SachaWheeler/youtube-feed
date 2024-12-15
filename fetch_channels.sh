@@ -114,7 +114,6 @@ check_and_download() {
 
         # Check if the video is already downloaded
         filename=$(yt-dlp --no-warnings --get-filename --no-download-archive -o "$video_dir/%(title)s.%(ext)s" "$video_url")
-        # if [[ ! -f "$filename" && "$filename" != *"webm"* && "$filename" != *"mkv"* ]]; then
         if [[ ! -f "$filename" && "$filename" != *"#shorts"* ]]; then
             echo "Downloading new video: $video_url"
 
