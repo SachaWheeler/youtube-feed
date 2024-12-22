@@ -36,10 +36,11 @@ CHANNELS=(
     # "https://www.youtube.com/user/ChannelName3"
 
     # Channel Id,Channel Url,Channel Title
+    "UCDWboBDVnIsGdYSK3KUO0hQ",  # Bricks for Granite        "https://www.youtube.com/channel/UCDWboBDVnIsGdYSK3KUO0hQ"
     "UC06E4Y_-ybJgBUMtXx8uNNw", #http://www.youtube.com/channel/UC06E4Y_-ybJgBUMtXx8uNNw", #TheBackyardScientist
     "UC4VK4LX8hbTjgdAipl0cHhw", #http://www.youtube.com/channel/UC4VK4LX8hbTjgdAipl0cHhw", #Letters Live
     "UC4a9LfdavRlVMaSSWFdIciA", #http://www.youtube.com/channel/UC4a9LfdavRlVMaSSWFdIciA", #RobWords
-    "UC4sEmXUuWIFlxRIFBRV6VXQ", #http://www.youtube.com/channel/UC4sEmXUuWIFlxRIFBRV6VXQ", #The History Guy: History Deserves to Be Remembered
+    # "UC4sEmXUuWIFlxRIFBRV6VXQ", #http://www.youtube.com/channel/UC4sEmXUuWIFlxRIFBRV6VXQ", #The History Guy: History Deserves to Be Remembered
     "UC5NO8MgTQKHAWXp6z8Xl7yQ", #http://www.youtube.com/channel/UC5NO8MgTQKHAWXp6z8Xl7yQ", #This Old Tony
     "UC6mIxFTvXkWQVEHPsEdflzQ", #http://www.youtube.com/channel/UC6mIxFTvXkWQVEHPsEdflzQ", #GreatScott!
     "UC6nSFpj9HTCZ5t-N3Rm3-HA", #http://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA", #Vsauce
@@ -52,7 +53,7 @@ CHANNELS=(
     "UCKuSn_LSQ_U_8o35jjpi0xQ", #http://www.youtube.com/channel/UCKuSn_LSQ_U_8o35jjpi0xQ", #Travel Man
     "UCP-50HNPjD2YUZhZNKISDJw", #http://www.youtube.com/channel/UCP-50HNPjD2YUZhZNKISDJw", #Official Rory Scovel
     "UCPD_bxCRGpmmeQcbe2kpPaA", #http://www.youtube.com/channel/UCPD_bxCRGpmmeQcbe2kpPaA", #First We Feast
-    "UCQtW2oz8ec8pHjjxawujNjg", #http://www.youtube.com/channel/UCQtW2oz8ec8pHjjxawujNjg", #Free Documentary - Nature
+    # "UCQtW2oz8ec8pHjjxawujNjg", #http://www.youtube.com/channel/UCQtW2oz8ec8pHjjxawujNjg", #Free Documentary - Nature
     "UCR1IuLEqb6UEA_zQ81kwXfg", #http://www.youtube.com/channel/UCR1IuLEqb6UEA_zQ81kwXfg", #Real Engineering
     "UCS0N5baNlQWJCUrhCEo8WlA", #http://www.youtube.com/channel/UCS0N5baNlQWJCUrhCEo8WlA", #Ben Eater
     "UCSju5G2aFaWMqn-_0YBtq5A", #http://www.youtube.com/channel/UCSju5G2aFaWMqn-_0YBtq5A", #Stand-up Maths
@@ -60,7 +61,7 @@ CHANNELS=(
     "UCUK0HBIBWgM2c4vsPhkYY4w", #http://www.youtube.com/channel/UCUK0HBIBWgM2c4vsPhkYY4w", #The Slow Mo Guys
     "UCXKCiTquPMavBqgXgrM9mBg", #http://www.youtube.com/channel/UCXKCiTquPMavBqgXgrM9mBg", #Bobby Fingers
     "UCYeF244yNGuFefuFKqxIAXw", #http://www.youtube.com/channel/UCYeF244yNGuFefuFKqxIAXw", #The Royal Institution
-    "UCafxR2HWJRmMfSdyZXvZMTw", #http://www.youtube.com/channel/UCafxR2HWJRmMfSdyZXvZMTw", #LOOK MUM NO COMPUTER
+    # "UCafxR2HWJRmMfSdyZXvZMTw", #http://www.youtube.com/channel/UCafxR2HWJRmMfSdyZXvZMTw", #LOOK MUM NO COMPUTER
     "UCdmcAwbdiXQWs9d4Qd4KzDw", #http://www.youtube.com/channel/UCdmcAwbdiXQWs9d4Qd4KzDw", #2 Much ColinFurze
     "UCe6ye3l9WA4SdNkqgs0YeMA", #http://www.youtube.com/channel/UCe6ye3l9WA4SdNkqgs0YeMA", #QI
     "UCeYy3kNtk_vhVSxZhi1WGJw", #http://www.youtube.com/channel/UCeYy3kNtk_vhVSxZhi1WGJw", #Would I Lie To You?
