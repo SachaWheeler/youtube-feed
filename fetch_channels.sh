@@ -104,7 +104,7 @@ check_and_download() {
 
     # Get the list of latest videos (excluding Shorts)
     yt-dlp --no-warnings -j "https://www.youtube.com/feeds/videos.xml?channel_id=$channel_id" | \
-    jq -c --arg date "$since_when" 'select(.duration > 60 and .upload_date >= ($date | gsub("-";"")))' | while read -r video_json; do
+    jq -c --arg date "$since_when" 'select(.duration > 120 and .upload_date >= ($date | gsub("-";"")))' | while read -r video_json; do
         video_url=$(echo "$video_json" | jq -r '.webpage_url')
         channel_name=$(echo "$video_json" | jq -r '.channel')
         echo "scanning $channel_name"
