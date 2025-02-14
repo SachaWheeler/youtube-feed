@@ -81,11 +81,11 @@ CHANNELS=(
     "UCw_lQ_KhJBX4hAQ6rqbg0Bw", #http://www.youtube.com/channel/UCw_lQ_KhJBX4hAQ6rqbg0Bw", #Kentucky Ballistics
     "UCyCCJFzPLNzBSCttyXP3mpg", #http://www.youtube.com/channel/UCyCCJFzPLNzBSCttyXP3mpg", #Mini Construction
     "UCyNtlmLB73-7gtlBz00XOQQ", #http://www.youtube.com/channel/UCyNtlmLB73-7gtlBz00XOQQ", #Folding Ideas
+    "UCasG9kJWi1eVxM0QkyqKVJQ", #https://www.youtube.com/@HandToolRescue
 
 )
 
-BASE_DOWNLOAD_DIR="/moshpit/youtube" #"/moshpit/youtube"
-# DESTINATION_DIR="/moshpit/youtube"
+BASE_DOWNLOAD_DIR="/moshpit/youtube"
 
 TIMESTAMP_FILE="$BASE_DOWNLOAD_DIR/file.txt"
 
