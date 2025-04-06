@@ -36,7 +36,6 @@ CHANNELS=(
     # "https://www.youtube.com/user/ChannelName3"
 
     # Channel Id,Channel Url,Channel Title
-    "UCDWboBDVnIsGdYSK3KUO0hQ",  # Bricks for Granite        "https://www.youtube.com/channel/UCDWboBDVnIsGdYSK3KUO0hQ"
     "UC06E4Y_-ybJgBUMtXx8uNNw", #http://www.youtube.com/channel/UC06E4Y_-ybJgBUMtXx8uNNw", #TheBackyardScientist
     "UC4VK4LX8hbTjgdAipl0cHhw", #http://www.youtube.com/channel/UC4VK4LX8hbTjgdAipl0cHhw", #Letters Live
     "UC4a9LfdavRlVMaSSWFdIciA", #http://www.youtube.com/channel/UC4a9LfdavRlVMaSSWFdIciA", #RobWords
