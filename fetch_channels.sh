@@ -133,6 +133,21 @@ for channel in "${CHANNELS[@]}"; do
     check_and_download "$channel"
 done
 
+#!/bin/bash
+
+# Find all files ending in .webm.mp4
+find "$BASE_DOWNLOAD_DIR" -type f -name "*.webm.mp4" | while read -r webm_file; do
+    # Strip the .webm part from the filename
+    mp4_file="${webm_file/.webm.mp4/.mp4}"
+
+    # If the non-webm version exists, delete the webm one
+    if [[ -f "$mp4_file" ]]; then
+        echo "Duplicate found: $webm_file (keeping $mp4_file)"
+        rm "$webm_file"
+    fi
+done
+
+
 # Remove temp files
 find "$BASE_DOWNLOAD_DIR" -type f -name "*.webm" -size 0 -exec rm {} +
 
