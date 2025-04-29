@@ -122,7 +122,7 @@ check_and_download() {
                     -o "$filename" "$video_url"
 
             echo "$filename"
-            touch "$filename"
+            # touch "$filename"
             touch "$TIMESTAMP_FILE"
         fi
     done
@@ -134,7 +134,7 @@ for channel in "${CHANNELS[@]}"; do
 done
 
 # Remove temp files
-find "$BASE_DOWNLOAD_DIR" -type f -name "*.webm" -size 0 -exec rm {} +
+# find "$BASE_DOWNLOAD_DIR" -type f -name "*.webm" -size 0 -exec rm {} +
 
 # Remove videos older than 7 days
 # find "$BASE_DOWNLOAD_DIR" -type f -mtime +7 -name "*.mp4" -delete
