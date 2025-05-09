@@ -3,11 +3,11 @@
 mkdir -p /tmp/youtube_temp
 
 yt-dlp -a channels.txt \
-  --playlist-end 10 \
+  --playlist-end 3 \
   --download-archive downloaded.txt \
   --dateafter now-7days \
   --match-filter "duration > 120" \
-  -f "bestvideo[height<=720]+bestaudio/best[height<=720]" \
+  -f "bestvideo[ext=mp4][height<=480]+bestaudio[ext=m4a]/best[ext=mp4][height<=480]" \
   -o "/tmp/youtube_temp/%(uploader)s/%(title)s.%(ext)s"
 
 rsync -av --remove-source-files /tmp/youtube_temp/ /moshpit/youtube/
