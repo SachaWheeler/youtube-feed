@@ -36,6 +36,8 @@ CHANNELS=(
     # "https://www.youtube.com/user/ChannelName3"
 
     # Channel Id,Channel Url,Channel Title
+    "UCrfKGpvbEQXcbe68dzXgJuA", #https://www.youtube.com/channel/UCrfKGpvbEQXcbe68dzXgJuA, #ForgottenWeapons
+    "UC5I2hjZYiW9gZPVkvzM8_Cw", #https://www.youtube.com/channel/UC5I2hjZYiW9gZPVkvzM8_Cw, #Techmoan
     "UC06E4Y_-ybJgBUMtXx8uNNw", #http://www.youtube.com/channel/UC06E4Y_-ybJgBUMtXx8uNNw", #TheBackyardScientist
     "UC4VK4LX8hbTjgdAipl0cHhw", #http://www.youtube.com/channel/UC4VK4LX8hbTjgdAipl0cHhw", #Letters Live
     "UC4a9LfdavRlVMaSSWFdIciA", #http://www.youtube.com/channel/UC4a9LfdavRlVMaSSWFdIciA", #RobWords
